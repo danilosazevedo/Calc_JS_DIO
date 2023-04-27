@@ -4,12 +4,12 @@ export const ButtonContainer = styled.button`
 padding: 20px;
 border: 1px solid #cdcdcd;
 color: black;
-background-color: #aafafa;
+background-color: #f7f1e3;
 font-size: 24px;
 font-weight: 700;
 flex: 1;
 
 &:hover{
-    opacity: 60%;
+    opacity: 85%;
 }
 `

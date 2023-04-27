@@ -2,6 +2,7 @@ import { Container, Content, Row } from './styles'
 import Input from './components/Input';
 import Button from './components/Button';
 import { useState } from 'react';
+import { keyboard } from '@testing-library/user-event/dist/keyboard';
 
 
 const App = () => {
@@ -9,6 +10,8 @@ const App = () => {
   const [currentNumber, setCurrentNumber] = useState('0');
   const [firstNumber, setFirstNumber] = useState('0')
   const [operation, setOperation] = useState()
+
+console.log(KeyboardEvent)
 
   const handleAddNumber = (num) => {
     setCurrentNumber(prev => `${prev === '0' ? '' : prev} ${num}`)
